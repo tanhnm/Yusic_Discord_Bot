@@ -1,0 +1,47 @@
+server:
+  port: 2333
+  address: 0.0.0.0
+  password: "youshallnotpass"
+
+lavalink:
+  plugins:
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.18.0"
+      snapshot: false
+    - dependency: "com.github.topi314.lavasrc:lavasrc-plugin:4.4.0"
+      snapshot: false
+  server:
+    password: "youshallnotpass"
+    sources:
+      youtube: false # We use the YouTube plugin instead
+      bandcamp: true
+      soundcloud: true
+      twitch: true
+      vimeo: true
+      http: true
+      local: false
+    bufferDurationMs: 400
+    youtubeSearchEnabled: true
+    youtubePlaylistLoadLimit: 6
+    playerUpdateInterval: 5
+    youtubePlaylistLoadLimitDefault: 100
+
+plugins:
+  youtube:
+    enabled: true
+    allowSearch: true
+    allowDirectVideoIds: true
+    allowDirectPlaylistIds: true
+    clients:
+      - MUSIC
+      - ANDROID_VR
+      - ANDROID
+    oauth:
+      enabled: true
+  lavasrc:
+    providers:
+      - "ytsearch"
+      - "ytmsearch"
+    sources:
+      spotify: false
+      applemusic: false
+      deezer: false
