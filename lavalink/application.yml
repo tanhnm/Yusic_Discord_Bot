@@ -33,10 +33,12 @@ plugins:
     allowDirectPlaylistIds: true
     clients:
       - MUSIC
-      - ANDROID_VR
-      - ANDROID
+      - WEB
     oauth:
       enabled: true
+    # pot: # Optional: Add these if playback still fails after OAuth
+    #   token: "YOUR_PO_TOKEN"
+    #   visitorData: "YOUR_VISITOR_DATA"
   lavasrc:
     providers:
       - "ytsearch"
