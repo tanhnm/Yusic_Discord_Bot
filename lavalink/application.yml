@@ -1,5 +1,5 @@
 server:
-  port: 2333
+  port: 8080
   address: 0.0.0.0
   password: "youshallnotpass"
 
@@ -33,12 +33,9 @@ plugins:
     allowDirectPlaylistIds: true
     clients:
       - MUSIC
+      - ANDROID_VR
       - WEB
-    oauth:
-      enabled: true
-    # pot: # Optional: Add these if playback still fails after OAuth
-    #   token: "YOUR_PO_TOKEN"
-    #   visitorData: "YOUR_VISITOR_DATA"
+      - WEBEMBEDDED
   lavasrc:
     providers:
       - "ytsearch"
