@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 2333
   address: 0.0.0.0
   password: "youshallnotpass"
 
@@ -38,8 +38,8 @@ plugins:
       - WEBEMBEDDED
     oauth:
       enabled: true
-    # pot: # Optional: Add these if playback still fails after OAuth
-    #   token: "YOUR_PO_TOKEN"
+    pot: # Optional: Add these if playback still fails after OAuth
+      token: "0gq1NX_bnJt_KCgYIARAAGBASNwF-L9IrYggS3Sg8UuhGXep4UeHRN2JUy10cKlt8K8RrvhbFopVx7Vo5p0At7shpNzK4HjS-aD4"
     #   visitorData: "YOUR_VISITOR_DATA"
   lavasrc:
     providers:
