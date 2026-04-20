@@ -7,7 +7,7 @@ export function setupLavalink(client) {
         nodes: [
             {
                 id: 'Main Node',
-                host: process.env.LAVALINK_HOST || 'localhost',
+                host: process.env.LAVALINK_HOST || '10.148.0.5',
                 port: parseInt(process.env.LAVALINK_PORT || '2333'),
                 authorization: process.env.LAVALINK_PASSWORD || 'youshallnotpass',
                 secure: false, // Set to true if using https/wss

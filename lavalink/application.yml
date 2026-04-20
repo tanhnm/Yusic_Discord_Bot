@@ -1,6 +1,6 @@
 server:
   port: 2333
-  address: 0.0.0.0
+  address: 10.148.0.5
   password: "youshallnotpass"
 
 lavalink:
